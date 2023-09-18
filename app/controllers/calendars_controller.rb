@@ -42,6 +42,7 @@ class CalendarsController < ApplicationController
 
       days = { month:(@todays_date + x).month, date: (@todays_date+x).day, plans:today_plans, wday:wdays[wday_num]}
       #wday:wdays[Date.today.wday]は、今日に対する曜日を自動で選択してくれる（今日の日付からスタートする）↑
+
       @week_days.push(days)
     end
 
